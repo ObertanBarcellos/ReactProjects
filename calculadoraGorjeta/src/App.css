@@ -1,0 +1,42 @@
+html{
+  background-color: rgb(84, 84, 84);
+  padding: 0;
+  margin: 0;
+}
+
+div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2{
+  color: #fff;
+  font-size: 45px;
+}
+
+h1{
+  color: #fff;
+  font-size: 25px;
+}
+
+input{
+  width: 450px;
+  height: 50px;
+  font-size: 19px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  background-color: rgb(27, 27, 27);
+  color: #fff;
+  border: 3px solid rgb(50, 50, 50);
+  border-radius: 10px;
+  font-weight:lighter;
+}
+
+.barra {
+  width: 400px;
+  height: 2px;
+  background-color: black;
+  margin-top: 15px;
+}
