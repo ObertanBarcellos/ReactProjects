@@ -6,7 +6,6 @@ export const Template = styled.div`
 
 export const PageContainer = styled.div`
     max-width: 1000px;
-    min-height: calc(100vh - 220px);
     margin: auto;   
 `;
 

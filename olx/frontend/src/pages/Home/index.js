@@ -1,17 +1,47 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { React, useState } from "react";
+import { SearchArea, PageArea } from "./styled";
+import useApi from "../../helpers/OlxAPI";
 
+import { PageContainer } from "../../components/MainComponents";
 
 const Page = () => {
+    const api = useApi();
+
     return (
-        <div>
-            <h1>Initial Page</h1>
+        <>
+            <SearchArea>
 
-            <Link to='/about'>Ablout</Link>
+                <PageContainer>
 
-        </div>
+                    <div className="searchBox">
+                        <form method="GET" action="/ads">
+                            <input type="text" name="q" placeholder="Oque você procura?">
+                            </input>
+
+                            <select name="state">
+                            </select>
+
+                            <button>Pesquisar</button>
+                        </form>
+                    </div>
+
+                    <div className="categoryList">
+
+                    </div>
+
+                </PageContainer>
+
+            </SearchArea>
 
 
+            <PageContainer>
+
+                <PageArea>
+
+                </PageArea>
+
+            </PageContainer>
+        </>
     );
 }
 
