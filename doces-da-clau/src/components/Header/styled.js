@@ -20,8 +20,10 @@ export const PageArea = styled.div`
             height: 100px;
             
             img{
-                width: 100px;
-                height: 100px;
+                margin-top: 10px;
+                width: 80px;
+                height: 80px;
+                cursor: pointer;
             }
         }
 
@@ -45,14 +47,26 @@ export const PageArea = styled.div`
                     align-items: center;
                     justify-content: space-between;
                     display: flex;
-                    
                     border-radius: 50%;
+                    transition: 0.4s;
+
+                    img{
+                        width: 36px;
+                        height: 36px; 
+                        margin-left: 10px;
+                        margin-top: 2px;
+                    }
+
+                    &:hover { 
+                        transform: translateY(-10px);
+                    }
                 }
 
                 .icons {
                     margin-left: 12px; 
                     width: 26px;
                     height: 26px;
+                    color: #fff;
                 }
             }
         }
