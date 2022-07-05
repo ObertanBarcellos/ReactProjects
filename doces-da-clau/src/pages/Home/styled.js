@@ -6,6 +6,13 @@ export const PageArea = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+
+    .text-main{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 29px;
+    }
     
     .home-container {
         display: flex;

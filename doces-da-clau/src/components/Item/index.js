@@ -2,17 +2,17 @@ import React from "react";
 import { PageArea } from "./styled";
 
 
-export default () => {
+function Page (props) {
     return (
         <PageArea>
            <div className="img">
-                <img src={require('./teste.png')} />
+                <img src={props.url ?? require('./teste.png')} />
            </div>
            <div className="about">
-                <text className="titulo">Bolo Padrão</text>
+                <text className="titulo">{props.text ?? 'Bolo Padrão'}</text>
                 <div className="textandbutton">
                     <div className="ttext">
-                        <text>Algum Texto Padrão</text>
+                        <text>{props.description ?? 'Algum Texto Padrão'}</text>
                     </div>
                 </div>
                 
@@ -20,3 +20,5 @@ export default () => {
         </PageArea>
     );
 }
+
+export default Page;
