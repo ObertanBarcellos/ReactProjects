@@ -9,8 +9,8 @@ export const PageArea = styled.div`
     flex-direction: column;
 
     .text-main{
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 80px;
+        margin-bottom: 80px;
         font-size: 29px;
     }
     

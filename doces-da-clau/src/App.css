@@ -3,11 +3,11 @@
 }
 
 .App {
-  background-color: #515a6c;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: top;
-  color: white;
+  color: rgb(77, 77, 77);
 }
 
