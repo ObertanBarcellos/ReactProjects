@@ -13,6 +13,8 @@ export const PageArea = styled.div`
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
+        margin-top: 30px;
 
         .docesdaclau{
             width: 25%;
@@ -37,11 +39,26 @@ export const PageArea = styled.div`
             font-weight: bold;
             font-size: 20px;
             text-align: left;
+            margin-top: 35px;
         }
+
+        .clau-function, .clau-contact {
+            text-align: left;
+            font-style: italic;
+            font-size: 15px;
+        }
+
         .developer-name {
             font-weight: bold;
             font-size: 20px;
             text-align: Right;
+            margin-top: 35px;
+        }
+
+        .developer-function, .developer-contact {
+            text-align: Right;
+            font-style: italic;
+            font-size: 15px;
         }
     }
 `;

@@ -18,9 +18,15 @@ export default () => {
                             <Link exact to='/'>
                                 <div><BsHouse className="icons"/></div>
                             </Link>
-                            <div><BiCake className="icons"/></div>
-                            <div><img src={require("./216696-200.png")}/></div>
-                            <div><BsQuestion className="icons"/></div>
+                            <Link exact to='/cakes'>
+                                <div><BiCake className="icons"/></div>
+                            </Link>
+                            <Link exact to='/candy'>
+                                <div><img src={require("./216696-200.png")}/></div>
+                            </Link>
+                            <Link exact to='/about'>
+                                <div><BsQuestion className="icons"/></div>
+                            </Link>
                         </form>
                 </div>  {/* menu-icons */}         
            </div>{/* menu-container */}
